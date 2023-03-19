@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DD2277C329C7A5F500CAACA0 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */; };
+		DD2277C529C7AAD200CAACA0 /* WeightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */; };
+		DD2277C829C7B14A00CAACA0 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2277C729C7B14A00CAACA0 /* SegmentedControlView.swift */; };
 		DD2E882B29C698D5001A5569 /* SmartLitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */; };
 		DD2E882D29C698D5001A5569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E882C29C698D5001A5569 /* ContentView.swift */; };
 		DD2E882F29C698D6001A5569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2E882E29C698D6001A5569 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInfoView.swift; sourceTree = "<group>"; };
+		DD2277C729C7B14A00CAACA0 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		DD2E882729C698D5001A5569 /* SmartLitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterApp.swift; sourceTree = "<group>"; };
 		DD2E882C29C698D5001A5569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2277C629C7B12100CAACA0 /* UtilityView */ = {
+			isa = PBXGroup;
+			children = (
+				DD2277C729C7B14A00CAACA0 /* SegmentedControlView.swift */,
+			);
+			path = UtilityView;
+			sourceTree = "<group>";
+		};
 		DD2E881E29C698D5001A5569 = {
 			isa = PBXGroup;
 			children = (
@@ -141,11 +153,13 @@
 		DD2E885429C69950001A5569 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD2277C629C7B12100CAACA0 /* UtilityView */,
 				DD2E885729C699B3001A5569 /* CatProfileView.swift */,
 				DD2E885929C6ABD7001A5569 /* HistoryView.swift */,
 				DD2E885B29C6AC1A001A5569 /* SettingView.swift */,
 				DD2E889929C6C640001A5569 /* HeaderView.swift */,
 				DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */,
+				DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,11 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2277C329C7A5F500CAACA0 /* EditProfileView.swift in Sources */,
+				DD2277C829C7B14A00CAACA0 /* SegmentedControlView.swift in Sources */,
 				DD2E882D29C698D5001A5569 /* ContentView.swift in Sources */,
 				DD2E889A29C6C640001A5569 /* HeaderView.swift in Sources */,
 				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
 				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,
 				DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */,
+				DD2277C529C7AAD200CAACA0 /* WeightInfoView.swift in Sources */,
 				DD2E882B29C698D5001A5569 /* SmartLitterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +474,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitter;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -487,7 +503,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitter;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
