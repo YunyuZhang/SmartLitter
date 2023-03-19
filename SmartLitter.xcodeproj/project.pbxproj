@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0C5E3A29C7D1BE0048E265 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C5E3929C7D1BE0048E265 /* SignInView.swift */; };
 		DD2277C329C7A5F500CAACA0 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */; };
 		DD2277C529C7AAD200CAACA0 /* WeightInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */; };
 		DD2277C829C7B14A00CAACA0 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2277C729C7B14A00CAACA0 /* SegmentedControlView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD0C5E3929C7D1BE0048E265 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInfoView.swift; sourceTree = "<group>"; };
 		DD2277C729C7B14A00CAACA0 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				DD2E889929C6C640001A5569 /* HeaderView.swift */,
 				DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */,
 				DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */,
+				DD0C5E3929C7D1BE0048E265 /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				DD2277C829C7B14A00CAACA0 /* SegmentedControlView.swift in Sources */,
 				DD2E882D29C698D5001A5569 /* ContentView.swift in Sources */,
 				DD2E889A29C6C640001A5569 /* HeaderView.swift in Sources */,
+				DD0C5E3A29C7D1BE0048E265 /* SignInView.swift in Sources */,
 				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
 				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,
 				DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */,
