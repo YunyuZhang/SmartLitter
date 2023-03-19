@@ -9,26 +9,22 @@ import SwiftUI
 
 struct SegmentedControlView: View {
     
-    enum TimeRangeSection : String, CaseIterable {
-        case oneWeek = "1W"
-        case oneMonth = "1M"
-        case sixMonth = "6M"
-        case oneYear = "1Y"
-    }
-    @State var selected : TimeRangeSection = .oneWeek
+    let options: [String]
+    @State var selected : String
+    
     
     var body: some View {
         Picker("", selection: $selected) {
-                    ForEach(TimeRangeSection.allCases, id: \.self) { option in
-                        Text(option.rawValue)
-                    }
-                }.pickerStyle(SegmentedPickerStyle())
-                    .padding()
+                ForEach(options, id: \.self) { option in
+                    Text(option)
+                }
+            }.pickerStyle(SegmentedPickerStyle())
+                .padding()
     }
 }
 
 struct SegmentedControlView_Previews: PreviewProvider {
     static var previews: some View {
-        SegmentedControlView()
+        SegmentedControlView(options: ["1","2", "100"], selected: "100")
     }
 }

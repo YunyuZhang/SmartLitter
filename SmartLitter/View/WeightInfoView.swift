@@ -42,7 +42,7 @@ struct WeightInfoView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height:200)
                     
-                    SegmentedControlView()
+                    SegmentedControlView(options: ["1w", "1m", "6m", "1y"], selected: "1m")
                     
                     Chart {
                         RectangleMark(
