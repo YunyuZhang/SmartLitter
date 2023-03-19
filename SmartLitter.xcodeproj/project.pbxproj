@@ -21,7 +21,6 @@
 		DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885729C699B3001A5569 /* CatProfileView.swift */; };
 		DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885929C6ABD7001A5569 /* HistoryView.swift */; };
 		DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885B29C6AC1A001A5569 /* SettingView.swift */; };
-		DD2E889A29C6C640001A5569 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E889929C6C640001A5569 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,6 @@
 		DD2E885729C699B3001A5569 /* CatProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatProfileView.swift; sourceTree = "<group>"; };
 		DD2E885929C6ABD7001A5569 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DD2E885B29C6AC1A001A5569 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		DD2E889929C6C640001A5569 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +157,6 @@
 				DD2E885729C699B3001A5569 /* CatProfileView.swift */,
 				DD2E885929C6ABD7001A5569 /* HistoryView.swift */,
 				DD2E885B29C6AC1A001A5569 /* SettingView.swift */,
-				DD2E889929C6C640001A5569 /* HeaderView.swift */,
 				DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */,
 				DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */,
 				DD0C5E3929C7D1BE0048E265 /* SignInView.swift */,
@@ -300,7 +297,6 @@
 				DD2277C329C7A5F500CAACA0 /* EditProfileView.swift in Sources */,
 				DD2277C829C7B14A00CAACA0 /* SegmentedControlView.swift in Sources */,
 				DD2E882D29C698D5001A5569 /* MainView.swift in Sources */,
-				DD2E889A29C6C640001A5569 /* HeaderView.swift in Sources */,
 				DD0C5E3A29C7D1BE0048E265 /* SignInView.swift in Sources */,
 				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
 				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,

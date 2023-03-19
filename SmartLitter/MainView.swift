@@ -17,7 +17,8 @@ struct MainView: View {
                     .font(.title)
                     .tabItem {
                         VStack {
-                            Image(systemName: "numbersign")
+                            Image("Cat_icon")
+                                .frame(width: 2, height: 2)
                             Text("Cat Profile")
                         }
                     }
