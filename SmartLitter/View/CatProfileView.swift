@@ -15,7 +15,8 @@ struct CatProfileView: View {
             ScrollView(showsIndicators: false) {
                 VStack {
                     Text("Cat Profile")
-                        .padding(30)
+                        .padding(20)
+                    SegmentedControlView(options: ["Cat 1", "Cat 2"], selected: "Cat 1")
                     Image("haybe_profile")
                         .resizable()
                         .clipShape(Circle())
