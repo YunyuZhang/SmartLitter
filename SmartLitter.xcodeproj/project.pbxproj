@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD2E882B29C698D5001A5569 /* SmartLitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */; };
+		DD2E882D29C698D5001A5569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E882C29C698D5001A5569 /* ContentView.swift */; };
+		DD2E882F29C698D6001A5569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2E882E29C698D6001A5569 /* Assets.xcassets */; };
+		DD2E883229C698D6001A5569 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2E883129C698D6001A5569 /* Preview Assets.xcassets */; };
+		DD2E883C29C698D6001A5569 /* SmartLitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E883B29C698D6001A5569 /* SmartLitterTests.swift */; };
+		DD2E884629C698D6001A5569 /* SmartLitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E884529C698D6001A5569 /* SmartLitterUITests.swift */; };
+		DD2E884829C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E884729C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD2E883829C698D6001A5569 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2E881F29C698D5001A5569 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2E882629C698D5001A5569;
+			remoteInfo = SmartLitter;
+		};
+		DD2E884229C698D6001A5569 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2E881F29C698D5001A5569 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2E882629C698D5001A5569;
+			remoteInfo = SmartLitter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD2E882729C698D5001A5569 /* SmartLitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterApp.swift; sourceTree = "<group>"; };
+		DD2E882C29C698D5001A5569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD2E882E29C698D6001A5569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD2E883129C698D6001A5569 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD2E883729C698D6001A5569 /* SmartLitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2E883B29C698D6001A5569 /* SmartLitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterTests.swift; sourceTree = "<group>"; };
+		DD2E884129C698D6001A5569 /* SmartLitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2E884529C698D6001A5569 /* SmartLitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterUITests.swift; sourceTree = "<group>"; };
+		DD2E884729C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD2E882429C698D5001A5569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2E883429C698D6001A5569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2E883E29C698D6001A5569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD2E881E29C698D5001A5569 = {
+			isa = PBXGroup;
+			children = (
+				DD2E882929C698D5001A5569 /* SmartLitter */,
+				DD2E883A29C698D6001A5569 /* SmartLitterTests */,
+				DD2E884429C698D6001A5569 /* SmartLitterUITests */,
+				DD2E882829C698D5001A5569 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD2E882829C698D5001A5569 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E882729C698D5001A5569 /* SmartLitter.app */,
+				DD2E883729C698D6001A5569 /* SmartLitterTests.xctest */,
+				DD2E884129C698D6001A5569 /* SmartLitterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD2E882929C698D5001A5569 /* SmartLitter */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */,
+				DD2E882C29C698D5001A5569 /* ContentView.swift */,
+				DD2E882E29C698D6001A5569 /* Assets.xcassets */,
+				DD2E883029C698D6001A5569 /* Preview Content */,
+			);
+			path = SmartLitter;
+			sourceTree = "<group>";
+		};
+		DD2E883029C698D6001A5569 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E883129C698D6001A5569 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD2E883A29C698D6001A5569 /* SmartLitterTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E883B29C698D6001A5569 /* SmartLitterTests.swift */,
+			);
+			path = SmartLitterTests;
+			sourceTree = "<group>";
+		};
+		DD2E884429C698D6001A5569 /* SmartLitterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E884529C698D6001A5569 /* SmartLitterUITests.swift */,
+				DD2E884729C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift */,
+			);
+			path = SmartLitterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD2E882629C698D5001A5569 /* SmartLitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2E884B29C698D6001A5569 /* Build configuration list for PBXNativeTarget "SmartLitter" */;
+			buildPhases = (
+				DD2E882329C698D5001A5569 /* Sources */,
+				DD2E882429C698D5001A5569 /* Frameworks */,
+				DD2E882529C698D5001A5569 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartLitter;
+			productName = SmartLitter;
+			productReference = DD2E882729C698D5001A5569 /* SmartLitter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD2E883629C698D6001A5569 /* SmartLitterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2E884E29C698D6001A5569 /* Build configuration list for PBXNativeTarget "SmartLitterTests" */;
+			buildPhases = (
+				DD2E883329C698D6001A5569 /* Sources */,
+				DD2E883429C698D6001A5569 /* Frameworks */,
+				DD2E883529C698D6001A5569 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2E883929C698D6001A5569 /* PBXTargetDependency */,
+			);
+			name = SmartLitterTests;
+			productName = SmartLitterTests;
+			productReference = DD2E883729C698D6001A5569 /* SmartLitterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD2E884029C698D6001A5569 /* SmartLitterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2E885129C698D6001A5569 /* Build configuration list for PBXNativeTarget "SmartLitterUITests" */;
+			buildPhases = (
+				DD2E883D29C698D6001A5569 /* Sources */,
+				DD2E883E29C698D6001A5569 /* Frameworks */,
+				DD2E883F29C698D6001A5569 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2E884329C698D6001A5569 /* PBXTargetDependency */,
+			);
+			name = SmartLitterUITests;
+			productName = SmartLitterUITests;
+			productReference = DD2E884129C698D6001A5569 /* SmartLitterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD2E881F29C698D5001A5569 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DD2E882629C698D5001A5569 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DD2E883629C698D6001A5569 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DD2E882629C698D5001A5569;
+					};
+					DD2E884029C698D6001A5569 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DD2E882629C698D5001A5569;
+					};
+				};
+			};
+			buildConfigurationList = DD2E882229C698D5001A5569 /* Build configuration list for PBXProject "SmartLitter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD2E881E29C698D5001A5569;
+			productRefGroup = DD2E882829C698D5001A5569 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD2E882629C698D5001A5569 /* SmartLitter */,
+				DD2E883629C698D6001A5569 /* SmartLitterTests */,
+				DD2E884029C698D6001A5569 /* SmartLitterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD2E882529C698D5001A5569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2E883229C698D6001A5569 /* Preview Assets.xcassets in Resources */,
+				DD2E882F29C698D6001A5569 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2E883529C698D6001A5569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2E883F29C698D6001A5569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD2E882329C698D5001A5569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2E882D29C698D5001A5569 /* ContentView.swift in Sources */,
+				DD2E882B29C698D5001A5569 /* SmartLitterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2E883329C698D6001A5569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2E883C29C698D6001A5569 /* SmartLitterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2E883D29C698D6001A5569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2E884829C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift in Sources */,
+				DD2E884629C698D6001A5569 /* SmartLitterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD2E883929C698D6001A5569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2E882629C698D5001A5569 /* SmartLitter */;
+			targetProxy = DD2E883829C698D6001A5569 /* PBXContainerItemProxy */;
+		};
+		DD2E884329C698D6001A5569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2E882629C698D5001A5569 /* SmartLitter */;
+			targetProxy = DD2E884229C698D6001A5569 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD2E884929C698D6001A5569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD2E884A29C698D6001A5569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD2E884C29C698D6001A5569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartLitter/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HKN292LU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD2E884D29C698D6001A5569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartLitter/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HKN292LU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD2E884F29C698D6001A5569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HKN292LU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLitter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLitter";
+			};
+			name = Debug;
+		};
+		DD2E885029C698D6001A5569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HKN292LU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLitter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLitter";
+			};
+			name = Release;
+		};
+		DD2E885229C698D6001A5569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HKN292LU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartLitter;
+			};
+			name = Debug;
+		};
+		DD2E885329C698D6001A5569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HKN292LU8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartLitter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD2E882229C698D5001A5569 /* Build configuration list for PBXProject "SmartLitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2E884929C698D6001A5569 /* Debug */,
+				DD2E884A29C698D6001A5569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2E884B29C698D6001A5569 /* Build configuration list for PBXNativeTarget "SmartLitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2E884C29C698D6001A5569 /* Debug */,
+				DD2E884D29C698D6001A5569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2E884E29C698D6001A5569 /* Build configuration list for PBXNativeTarget "SmartLitterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2E884F29C698D6001A5569 /* Debug */,
+				DD2E885029C698D6001A5569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2E885129C698D6001A5569 /* Build configuration list for PBXNativeTarget "SmartLitterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2E885229C698D6001A5569 /* Debug */,
+				DD2E885329C698D6001A5569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD2E881F29C698D5001A5569 /* Project object */;
+}
