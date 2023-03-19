@@ -60,7 +60,7 @@ struct SettingView: View {
                                         .frame(maxWidth: .infinity,
                                                maxHeight: .infinity,
                                                alignment: .leading)
-                                    SegmentedControlView(options: ["cat1", "cat2"], selected: "cat1")
+                                    SegmentedControlView(options: ["Cat 1", "Cat 2"], selected: "Cat 1")
                                     SegmentedControlView(options: ["Poop", "Pee"], selected: "Poop")
                                     Text("For")
                                     SegmentedControlView(options: ["More than", "Less or equals to"], selected: "More than")
