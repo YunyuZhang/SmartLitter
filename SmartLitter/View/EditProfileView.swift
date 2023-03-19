@@ -15,7 +15,7 @@ struct EditProfileView: View {
     @State private var weight: String = ""
     
     var body: some View {
-        NavigationView() {
+        NavigationView {
             ScrollView {
                 VStack {
                     Text("Edit Cat Profile")
@@ -30,8 +30,8 @@ struct EditProfileView: View {
                         .offset(x:0, y:-20)
                     
                     VStack(alignment: .leading) {
-                        HStack {
-                            Text("Pet's name")
+                        HStack(spacing: 10) {
+                            Text("Name")
                             TextField(
                                     "Name",
                                     text: $catName

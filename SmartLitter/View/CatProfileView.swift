@@ -12,7 +12,7 @@ struct CatProfileView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     Text("Cat Profile")
                         .padding(30)
@@ -27,7 +27,7 @@ struct CatProfileView: View {
                     NavigationLink(destination: EditProfileView()) {
                                        Text("Edit Profile")
                                            .frame(width: 150, height: 30)
-                                           .font(.system(size: 20, weight: .light, design: .rounded))
+                                           .font(.system(size: 15, weight: .light, design: .rounded))
                                            .padding(10)
                                            .background(Color.blue)
                                            .foregroundColor(.white)
@@ -42,14 +42,16 @@ struct CatProfileView: View {
                     }
                     .padding(.top, 10)
                     
-                    Text("See Weight Data")
-                        .frame(width: 150, height: 30)
-                        .font(.system(size: 20, weight: .light, design: .rounded))
-                        .padding(15)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
-                        .padding(.top, 30)
+                    NavigationLink(destination: WeightInfoView()) {
+                                       Text("See Weight Data")
+                                           .frame(width: 150, height: 30)
+                                           .font(.system(size: 15, weight: .light, design: .rounded))
+                                           .padding(10)
+                                           .background(Color.blue)
+                                           .foregroundColor(.white)
+                                           .cornerRadius(20)
+                                   }
+                    
                 }
             }
             .font(.system(size: 20, weight: .light, design: .rounded))
