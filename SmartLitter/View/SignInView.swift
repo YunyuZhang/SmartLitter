@@ -13,15 +13,20 @@ struct SignInView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 16) {
-                NavigationLink(destination: ContentView()) {
+                Spacer()
+                Text("Welcome")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                Spacer()
+                                    
+                NavigationLink(destination: MainView()) {
                     SignInButton(imageName: "Google_SignIn")
                 }
                 
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: MainView()) {
                     SignInButton(imageName: "Facebook_SignIn")
                 }
                 
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: MainView()) {
                     SignInButton(imageName: "Apple_SignIn")
                 }
             }
