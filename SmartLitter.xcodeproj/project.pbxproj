@@ -14,6 +14,9 @@
 		DD2E883C29C698D6001A5569 /* SmartLitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E883B29C698D6001A5569 /* SmartLitterTests.swift */; };
 		DD2E884629C698D6001A5569 /* SmartLitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E884529C698D6001A5569 /* SmartLitterUITests.swift */; };
 		DD2E884829C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E884729C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift */; };
+		DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885729C699B3001A5569 /* CatProfileView.swift */; };
+		DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885929C6ABD7001A5569 /* HistoryView.swift */; };
+		DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885B29C6AC1A001A5569 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		DD2E884129C698D6001A5569 /* SmartLitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2E884529C698D6001A5569 /* SmartLitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterUITests.swift; sourceTree = "<group>"; };
 		DD2E884729C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLitterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD2E885729C699B3001A5569 /* CatProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatProfileView.swift; sourceTree = "<group>"; };
+		DD2E885929C6ABD7001A5569 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		DD2E885B29C6AC1A001A5569 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		DD2E882929C698D5001A5569 /* SmartLitter */ = {
 			isa = PBXGroup;
 			children = (
+				DD2E885429C69950001A5569 /* View */,
 				DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */,
 				DD2E882C29C698D5001A5569 /* ContentView.swift */,
 				DD2E882E29C698D6001A5569 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				DD2E884729C698D6001A5569 /* SmartLitterUITestsLaunchTests.swift */,
 			);
 			path = SmartLitterUITests;
+			sourceTree = "<group>";
+		};
+		DD2E885429C69950001A5569 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E885729C699B3001A5569 /* CatProfileView.swift */,
+				DD2E885929C6ABD7001A5569 /* HistoryView.swift */,
+				DD2E885B29C6AC1A001A5569 /* SettingView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2E882D29C698D5001A5569 /* ContentView.swift in Sources */,
+				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
+				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,
+				DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */,
 				DD2E882B29C698D5001A5569 /* SmartLitterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
