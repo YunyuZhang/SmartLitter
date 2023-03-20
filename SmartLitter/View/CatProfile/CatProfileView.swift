@@ -12,7 +12,7 @@ struct CatProfileView: View {
     @ObservedObject private var  allCatsViewModel = AllCatsViewModel()
 
     var body: some View {
-        NavigationView {
+//        NavigationView {
             ScrollView(showsIndicators: false) {
                 VStack {
                     Text("Cat Profile")
@@ -58,7 +58,7 @@ struct CatProfileView: View {
                 }
             }
             .font(.system(size: 20, weight: .light, design: .rounded))
-        }
+//        }
         .navigationTitle("Cat Profile")
         .accentColor(.blue)
     }

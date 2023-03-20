@@ -55,9 +55,9 @@ struct SettingView: View {
                                            maxHeight: .infinity,
                                            alignment: .leading)
                                 Toggle("All Notifications", isOn: $toggleOn)
-                                Toggle("Notify when there is a usage", isOn: $toggleOn)
+                                Toggle("Notify Box Usage", isOn: $toggleOn)
                                 Group {
-                                    Text("Notify me when:")
+                                    Text("Notify Me When:")
                                         .frame(maxWidth: .infinity,
                                                maxHeight: .infinity,
                                                alignment: .leading)
