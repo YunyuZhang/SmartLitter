@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SettingView: View {
     @State private var toggleOn = true
@@ -68,11 +69,14 @@ struct SettingView: View {
                                 
                                 HStack {
                                     TextField(
-                                            "Number of times",
+                                            "# of Times",
                                             text: $numberOfTime
                                         )
-                                    .frame(width: 200, height: 50)
+                                    .keyboardType(.numberPad)
+                                    .frame(width: 100, height: 50)
                                     Text("times")
+                                        .frame(width: 50, height: 50)
+                                        .font(.system(size: 15, weight: .light, design: .rounded))
                                 }
                                 Text("Within")
                                 
@@ -81,23 +85,26 @@ struct SettingView: View {
                                             "Hours",
                                             text: $hour
                                         )
-                                    .frame(width: 200, height: 50)
-                                    Text("Hours")
+                                    .keyboardType(.numberPad)
+                                    .frame(width: 100, height: 50)
+                                    Text("hours")
+                                        .frame(width: 50, height: 50)
+                                        .font(.system(size: 15, weight: .light, design: .rounded))
                                 }
                                 
-                                Text("Save Setting")
-                                    .frame(width: 150, height: 30)
-                                    .font(.system(size: 15, weight: .light, design: .rounded))
-                                    .padding(10)
-                                    .background(Color.blue)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(20)
+                                Button("Save Setting") {
+                                   hideKeyboard()
+                                }
+                                .frame(width: 150, height: 30)
+                                .font(.system(size: 15, weight: .light, design: .rounded))
+                                .padding(10)
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(20)
+
                             }
                 
                         }
-                        
-                
-        
     
                     }
                     .font(.system(size: 20, weight: .light, design: .rounded))
@@ -111,6 +118,16 @@ struct SettingView: View {
             }
             
         }
+    }
+    
+    func hideKeyboard() {
+        UIApplication.shared.endEditing()
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
