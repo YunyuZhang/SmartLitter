@@ -35,7 +35,7 @@ struct SettingView: View {
                                            alignment: .leading)
                                 
                                 HStack {
-                                    Text("Edit User Profile")
+                                    Text("Upgrade to Pro Version")
                                     Spacer()
                                     Image(systemName: "chevron.forward")
                                 }

@@ -26,11 +26,11 @@ struct CustomAlertsView: View {
                     Toggle("Cat 1 poop 3 times within 6 hours", isOn: $toggleOn)
                     Spacer()
                     Group {
-                        Text("Notify Me When:")
+                        Text("Notify me when my cat:")
                             .frame(maxWidth: .infinity,
                                    maxHeight: .infinity,
                                    alignment: .leading)
-                        SegmentedControlView(options: ["Cat 1", "Cat 2"], selected: "Cat 1")
+
                         SegmentedControlView(options: ["Poop", "Pee"], selected: "Poop")
                         Text("For")
                         SegmentedControlView(options: ["More than", "Less or equals to"], selected: "More than")

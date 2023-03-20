@@ -17,7 +17,6 @@ struct CatProfileView: View {
                 VStack {
                     Text("Cat Profile")
                         .padding(20)
-                    SegmentedControlView(options: ["Cat 1", "Cat 2"], selected: "Cat 1")
                     Image("haybe_profile")
                         .resizable()
                         .clipShape(Circle())
@@ -40,7 +39,7 @@ struct CatProfileView: View {
                         Text("Age: 2 years old")
                         Text("Gender: Male")
                         Text("Breed: Brisith Short Hair")
-                        Text("Weight: 14 Lbs")
+                        Text("Weight: 18 Lbs")
                         Text("Last Updated: 3/19/2022")
                     }
                     .padding(.top, 10)
