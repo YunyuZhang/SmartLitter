@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct CatProfileView: View {
+    @ObservedObject private var  allCatsViewModel = AllCatsViewModel()
 
     var body: some View {
         NavigationView {

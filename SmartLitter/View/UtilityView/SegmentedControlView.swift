@@ -12,7 +12,6 @@ struct SegmentedControlView: View {
     let options: [String]
     @State var selected : String
     
-    
     var body: some View {
         Picker("", selection: $selected) {
                 ForEach(options, id: \.self) { option in
