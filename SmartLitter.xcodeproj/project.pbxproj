@@ -21,6 +21,8 @@
 		DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885729C699B3001A5569 /* CatProfileView.swift */; };
 		DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885929C6ABD7001A5569 /* HistoryView.swift */; };
 		DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885B29C6AC1A001A5569 /* SettingView.swift */; };
+		DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512929C7E1120001C72F /* HistoryViewModel.swift */; };
+		DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512B29C7E2CC0001C72F /* LogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		DD2E885729C699B3001A5569 /* CatProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatProfileView.swift; sourceTree = "<group>"; };
 		DD2E885929C6ABD7001A5569 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DD2E885B29C6AC1A001A5569 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		DDE0512929C7E1120001C72F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		DDE0512B29C7E2CC0001C72F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				DD2E885929C6ABD7001A5569 /* HistoryView.swift */,
+				DDE0512929C7E1120001C72F /* HistoryViewModel.swift */,
+				DDE0512B29C7E2CC0001C72F /* LogView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -307,9 +313,11 @@
 				DD2E882D29C698D5001A5569 /* MainView.swift in Sources */,
 				DD0C5E3A29C7D1BE0048E265 /* SignInView.swift in Sources */,
 				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
+				DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */,
 				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,
 				DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */,
 				DD2277C529C7AAD200CAACA0 /* WeightInfoView.swift in Sources */,
+				DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */,
 				DD2E882B29C698D5001A5569 /* SmartLitterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
