@@ -16,11 +16,10 @@ struct EditProfileView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack {
                     Text("Edit Cat Profile")
                         .padding(30)
-                        .font(.system(size: 10, weight: .light, design: .rounded))
                         
                     Image("haybe_profile")
                         .resizable()
@@ -29,6 +28,7 @@ struct EditProfileView: View {
                         .frame(width: 200, height:200)
                     Text("Edit profile picture")
                         .frame(width: 300, height: 40)
+                        .font(.system(size: 15, weight: .light, design: .rounded))
                         .offset(x:0, y:-20)
                     
                     VStack(alignment: .leading) {
