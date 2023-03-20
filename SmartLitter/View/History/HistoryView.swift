@@ -40,7 +40,7 @@ struct HistoryView: View {
                                 
                             
                             Button("Usage") {
-                                generateNotification(title: "PurrfectTracker", subtitle: "Litter Box Usage", body: "Cat 1 just pooped")
+                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Cat 1 just pooped")
                                 
                             }
                             .frame(width:70, height: 20)
