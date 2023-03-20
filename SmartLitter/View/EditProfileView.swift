@@ -20,7 +20,6 @@ struct EditProfileView: View {
                 VStack {
                     Text("Edit Cat Profile")
                         .padding(30)
-                        
                     Image("haybe_profile")
                         .resizable()
                         .clipShape(Circle())

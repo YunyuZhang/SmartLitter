@@ -23,6 +23,7 @@
 		DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885B29C6AC1A001A5569 /* SettingView.swift */; };
 		DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512929C7E1120001C72F /* HistoryViewModel.swift */; };
 		DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512B29C7E2CC0001C72F /* LogView.swift */; };
+		DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512D29C808440001C72F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		DD2E885B29C6AC1A001A5569 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		DDE0512929C7E1120001C72F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		DDE0512B29C7E2CC0001C72F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		DDE0512D29C808440001C72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */,
 				DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */,
 				DD0C5E3929C7D1BE0048E265 /* SignInView.swift */,
+				DDE0512D29C808440001C72F /* AppDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */,
 				DD2277C329C7A5F500CAACA0 /* EditProfileView.swift in Sources */,
 				DD2277C829C7B14A00CAACA0 /* SegmentedControlView.swift in Sources */,
 				DD2E882D29C698D5001A5569 /* MainView.swift in Sources */,
