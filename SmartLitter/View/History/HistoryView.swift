@@ -40,13 +40,18 @@ struct HistoryView: View {
                                 
                             
                             Button("Usage") {
-                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Cat 1 just pooped")
+                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Cat 1 just pooped", time: 3.0)
                                 
                             }
                             .frame(width:70, height: 20)
                             
                             Button("Alert") {
-                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Cat 1 just pooped 3 times within 6 hours")
+                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Cat 1 just pooped 3 times within 6 hours!", time: 3.5)
+                            }
+                            .frame(width:70, height: 20)
+                            
+                            Button("Summary") {
+                                generateNotification(title: "PurrfectTracker", subtitle: "Summary", body: "Cat 1 pooped 7 times, peed 10 times and gain 2 lbs last week", time: 4.0)
                             }
                             .frame(width:70, height: 20)
                         }.padding(4)
@@ -90,14 +95,14 @@ struct HistoryView: View {
         }
     }
     
-    func generateNotification(title: String, subtitle: String, body: String) {
+    func generateNotification(title: String, subtitle: String, body: String, time: Double) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.subtitle = subtitle
         content.body = body
         content.sound = UNNotificationSound.default
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: time, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request){ (error) in
             if let error = error {
