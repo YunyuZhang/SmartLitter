@@ -34,21 +34,22 @@ struct HistoryView: View {
                     }
                     
                     if showFilters {
-                        SegmentedControlView(options: ["Cat 1", "Cat 2"], selected: "Cat 1")
-                        MultiDatePicker("Dates Available", selection: $dates)
-                            .fixedSize()
-                        
-                        Button("Usage") {
-                            generateNotification(title: "PurrfectTracker", subtitle: "Litter Box Usage", body: "Cat 1 just pooped")
+                        VStack {
+                            SegmentedControlView(options: ["Cat 1", "Cat 2"], selected: "Cat 1")
+                            MultiDatePicker("Dates Available", selection: $dates)
+                                
                             
-                        }
-                        .frame(width:70, height: 20)
-                        
-                        Button("Alert") {
-                            generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Cat 1 just pooped 3 times within 6 hours")
-                        }
-                        .frame(width:70, height: 20)
-                        
+                            Button("Usage") {
+                                generateNotification(title: "PurrfectTracker", subtitle: "Litter Box Usage", body: "Cat 1 just pooped")
+                                
+                            }
+                            .frame(width:70, height: 20)
+                            
+                            Button("Alert") {
+                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Cat 1 just pooped 3 times within 6 hours")
+                            }
+                            .frame(width:70, height: 20)
+                        }.padding(4)
                     }
 
                     List {
@@ -62,6 +63,7 @@ struct HistoryView: View {
                            alignment: .leading)
                 }
             }
+            .padding()
         }
         .onAppear() {
             historyViewModel.generateLogs()
