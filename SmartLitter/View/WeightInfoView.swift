@@ -64,6 +64,7 @@ struct WeightInfoView: View {
                         .foregroundStyle(.orange.gradient)
                         .symbol(Circle())
                     }
+                    .padding()
                     .frame(width: 350, height: 200)
                     
                     Spacer()
