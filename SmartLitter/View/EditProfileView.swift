@@ -20,6 +20,8 @@ struct EditProfileView: View {
                 VStack {
                     Text("Edit Cat Profile")
                         .padding(30)
+                        .font(.system(size: 10, weight: .light, design: .rounded))
+                        
                     Image("haybe_profile")
                         .resizable()
                         .clipShape(Circle())
@@ -41,7 +43,15 @@ struct EditProfileView: View {
                         HStack {
                             Text("Age")
                             TextField(
-                                    "Age",
+                                    "Approximate Age",
+                                    text: $catName
+                                )
+                            .frame(width: 200, height: 50)
+                        }
+                        HStack {
+                            Text("Gender")
+                            TextField(
+                                    "Male/Female",
                                     text: $catName
                                 )
                             .frame(width: 200, height: 50)

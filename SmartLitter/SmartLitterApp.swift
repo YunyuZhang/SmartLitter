@@ -11,7 +11,8 @@ import SwiftUI
 struct SmartLitterApp: App {
     var body: some Scene {
         WindowGroup {
-            SignInView()
+//            SignInView()
+            MainView()
         }
     }
 }

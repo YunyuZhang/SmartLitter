@@ -85,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0C5E3B29C7D8EC0048E265 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E885929C6ABD7001A5569 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 		DD2277C629C7B12100CAACA0 /* UtilityView */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,9 +161,9 @@
 		DD2E885429C69950001A5569 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD0C5E3B29C7D8EC0048E265 /* History */,
 				DD2277C629C7B12100CAACA0 /* UtilityView */,
 				DD2E885729C699B3001A5569 /* CatProfileView.swift */,
-				DD2E885929C6ABD7001A5569 /* HistoryView.swift */,
 				DD2E885B29C6AC1A001A5569 /* SettingView.swift */,
 				DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */,
 				DD2277C429C7AAD200CAACA0 /* WeightInfoView.swift */,

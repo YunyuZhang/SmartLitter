@@ -37,6 +37,7 @@ struct CatProfileView: View {
                     
                     VStack(alignment: .leading, spacing: 20) {
                         Text("Age: 2 years old")
+                        Text("Gender: Male")
                         Text("Breed: Brisith Short Hair")
                         Text("Weight: 14 Lbs")
                         Text("Last Updated: 3/19/2022")
