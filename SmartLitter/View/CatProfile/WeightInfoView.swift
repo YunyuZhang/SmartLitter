@@ -70,7 +70,7 @@ struct WeightInfoView: View {
                     Spacer()
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        Text("Haybe's curret weight is 18 Lbs")
+                        Text("Haybe's current weight is 18 Lbs")
                         Text("Haybe is a little chunky")
                     }
                     .font(.system(size: 20, weight: .light, design: .rounded))

@@ -51,6 +51,26 @@ struct HistoryView: View {
                             .frame(width:70, height: 20)
                         }.padding(4)
                     }
+                    Divider()
+                    VStack(alignment: .leading) {
+                        Text("Summary")
+                            .bold()
+                        Text("Cat 1")
+                        HStack {
+                            Text("pooped")
+                            Text("3")
+                                .foregroundColor(.orange)
+                            Text("times")
+                        }
+                        HStack {
+                            Text("peed")
+                            Text("2")
+                                .foregroundColor(.orange)
+                            Text("times")
+                        }
+                        Text("within 24 hours")
+                    }
+                    
 
                     List {
                         ForEach(historyViewModel.logList, id: \.id) {
