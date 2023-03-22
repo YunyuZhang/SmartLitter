@@ -23,7 +23,8 @@ struct CustomAlertsView: View {
                         .frame(maxWidth: .infinity,
                                maxHeight: .infinity,
                                alignment: .leading)
-                    Toggle("Cat 1 poop 3 times within 6 hours", isOn: $toggleOn)
+                    Toggle("Alert: when poop 3 times within 6 hours", isOn: $toggleOn)
+                        .padding(.bottom)
                     Spacer()
                     Group {
                         Text("Notify me when my cat:")

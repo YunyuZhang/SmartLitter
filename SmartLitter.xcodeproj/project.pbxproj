@@ -68,6 +68,7 @@
 		DDE0512D29C808440001C72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE0513029C819BF0001C72F /* AllCatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsViewModel.swift; sourceTree = "<group>"; };
 		DDE0513329C8D0870001C72F /* CustomAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertsView.swift; sourceTree = "<group>"; };
+		DDE0513529CB85D60001C72F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 		DD2E881E29C698D5001A5569 = {
 			isa = PBXGroup;
 			children = (
+				DDE0513529CB85D60001C72F /* README.md */,
 				DD2E882929C698D5001A5569 /* SmartLitter */,
 				DD2E883A29C698D6001A5569 /* SmartLitterTests */,
 				DD2E884429C698D6001A5569 /* SmartLitterUITests */,

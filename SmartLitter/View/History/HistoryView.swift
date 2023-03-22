@@ -12,14 +12,7 @@ struct HistoryView: View {
     @State private var dates: Set<DateComponents> = []
     @State private var showFilters = false
     
-    @ObservedObject private var historyViewModel = HistoryViewModel()
-    var logList = [
-        Log(timestamp: "3/17/2022 10:00pm", catName: "Cat1", activity: "Poop"),
-        Log(timestamp: "3/17/2022 9:00pm", catName: "Cat1", activity: "Pee"),
-        Log(timestamp: "3/17/2022 8:00pm", catName: "Cat1", activity: "Poop"),
-        Log(timestamp: "3/17/2022 7:00pm", catName: "Cat1", activity: "Poop"),
-        Log(timestamp: "3/16/2022 5:00am", catName: "Cat1", activity: "Pee")]
-    
+    @ObservedObject private var historyViewModel = HistoryViewModel()    
     
     var body: some View {
         NavigationView {
@@ -39,28 +32,28 @@ struct HistoryView: View {
                             MultiDatePicker("Dates Filter", selection: $dates)
                                 
                             
-                            Button("Usage") {
-                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Cat 1 just pooped", time: 3.0)
-                                
-                            }
-                            .frame(width:70, height: 20)
-                            
-                            Button("Alert") {
-                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Cat 1 just pooped 3 times within 6 hours!", time: 3.5)
-                            }
-                            .frame(width:70, height: 20)
-                            
-                            Button("Summary") {
-                                generateNotification(title: "PurrfectTracker", subtitle: "Summary", body: "Cat 1 pooped 7 times, peed 10 times and gain 2 lbs last week", time: 4.0)
-                            }
-                            .frame(width:70, height: 20)
+//                            Button("Usage") {
+//                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Haybe just pooped", time: 3.0)
+//                                
+//                            }
+//                            .frame(width:70, height: 20)
+//                            
+//                            Button("Alert") {
+//                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Haybe just pooped 3 times within 6 hours!", time: 3.5)
+//                            }
+//                            .frame(width:70, height: 20)
+//                            
+//                            Button("Summary") {
+//                                generateNotification(title: "PurrfectTracker", subtitle: "Weekly Summary", body: "Haybe pooped 7 times, peed 10 times and gained 2 lbs last week", time: 3.0)
+//                            }
+//                            .frame(width:70, height: 20)
                         }.padding(4)
                     }
                     Divider()
                     VStack(alignment: .leading) {
                         Text("Summary")
                             .bold()
-                        Text("Cat 1")
+                        Text("Haybe")
                         HStack {
                             Text("pooped")
                             Text("3")

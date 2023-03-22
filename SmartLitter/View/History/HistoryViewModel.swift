@@ -14,13 +14,14 @@ final class HistoryViewModel : ObservableObject {
     
     func generateLogs() {
         
-        self.logList = [Log(timestamp: "3/17/2022 10:00pm", catName: "Cat1", activity: "Poop"),
-                        Log(timestamp: "3/17/2022 8:00pm", catName: "Cat1", activity: "Poop"),
-                        Log(timestamp: "3/17/2022 7:00pm", catName: "Cat1", activity: "Poop"),
-                        Log(timestamp: "3/16/2022 6:00pm", catName: "Cat2", activity: "Pee"),
-                        Log(timestamp: "3/16/2022 5:00am", catName: "Cat2", activity: "Pee")]
+        self.logList = [
+            Log(timestamp: "3/17/2022 10:00pm", catName: "Haybe", activity: "Poop"),
+            Log(timestamp: "3/17/2022 9:00pm", catName: "Haybe", activity: "Pee"),
+            Log(timestamp: "3/17/2022 8:00pm", catName: "Haybe", activity: "Poop"),
+            Log(timestamp: "3/17/2022 7:00pm", catName: "Haybe", activity: "Poop"),
+            Log(timestamp: "3/16/2022 5:00am", catName: "Haybe", activity: "Pee")
+        ]
         
-        print(self.logList)
     }
     
     
