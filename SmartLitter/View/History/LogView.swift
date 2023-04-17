@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LogView: View {
-    var log: Log
+    var log: UsageLog
     
     var body: some View {
         
@@ -17,7 +17,7 @@ struct LogView: View {
                 Text(log.catName)
                     .foregroundColor(.blue)
                 
-                Text(log.activity)
+                Text(log.eventType)
                     .foregroundColor(.orange)
             }
             Text(log.timestamp)
@@ -29,11 +29,11 @@ struct LogView: View {
 
 struct LogView_Previews: PreviewProvider {
     static var previews: some View {
-        let logList : [Log] = [Log(timestamp: "3/17/2022 10:00pm", catName: "Cat1", activity: "Poop"),
-                        Log(timestamp: "3/17/2022 8:00pm", catName: "Cat1", activity: "Poop"),
-                        Log(timestamp: "3/17/2022 7:00pm", catName: "Cat1", activity: "Poop"),
-                        Log(timestamp: "3/16/2022 6:00pm", catName: "Cat2", activity: "Pee"),
-                        Log(timestamp: "3/16/2022 5:00am", catName: "Cat2", activity: "Pee")]
+        let logList : [UsageLog] = [UsageLog(timestamp: "3/17/2022 10:00pm", catName: "Cat1", eventType: "Poop"),
+                        UsageLog(timestamp: "3/17/2022 8:00pm", catName: "Cat1", eventType: "Poop"),
+                        UsageLog(timestamp: "3/17/2022 7:00pm", catName: "Cat1", eventType: "Poop"),
+                        UsageLog(timestamp: "3/16/2022 6:00pm", catName: "Cat2", eventType: "Pee"),
+                        UsageLog(timestamp: "3/16/2022 5:00am", catName: "Cat2", eventType: "Pee")]
         
         ForEach(logList) {
             log in

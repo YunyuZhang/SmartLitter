@@ -84,7 +84,8 @@ struct HistoryView: View {
             .padding()
         }
         .onAppear() {
-            historyViewModel.generateLogs()
+//            historyViewModel.generateLogs()
+            historyViewModel.getUsageWithAPI()
         }
     }
     
