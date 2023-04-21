@@ -21,6 +21,10 @@
 		DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885729C699B3001A5569 /* CatProfileView.swift */; };
 		DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885929C6ABD7001A5569 /* HistoryView.swift */; };
 		DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E885B29C6AC1A001A5569 /* SettingView.swift */; };
+		DD309B9329EDFF140035831D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD309B9229EDFF140035831D /* GoogleService-Info.plist */; };
+		DD309B9629EDFFC90035831D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DD309B9529EDFFC90035831D /* FirebaseAnalytics */; };
+		DD309B9829EDFFC90035831D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DD309B9729EDFFC90035831D /* FirebaseAuth */; };
+		DD309B9A29EDFFC90035831D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DD309B9929EDFFC90035831D /* FirebaseMessaging */; };
 		DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512929C7E1120001C72F /* HistoryViewModel.swift */; };
 		DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512B29C7E2CC0001C72F /* LogView.swift */; };
 		DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512D29C808440001C72F /* AppDelegate.swift */; };
@@ -63,6 +67,9 @@
 		DD2E885729C699B3001A5569 /* CatProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatProfileView.swift; sourceTree = "<group>"; };
 		DD2E885929C6ABD7001A5569 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DD2E885B29C6AC1A001A5569 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		DD309B9229EDFF140035831D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD309B9B29EE03AA0035831D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DD309B9C29EE03E30035831D /* SmartLitter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLitter.entitlements; sourceTree = "<group>"; };
 		DDE0512929C7E1120001C72F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		DDE0512B29C7E2CC0001C72F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		DDE0512D29C808440001C72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD309B9A29EDFFC90035831D /* FirebaseMessaging in Frameworks */,
+				DD309B9629EDFFC90035831D /* FirebaseAnalytics in Frameworks */,
+				DD309B9829EDFFC90035831D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +148,9 @@
 		DD2E882929C698D5001A5569 /* SmartLitter */ = {
 			isa = PBXGroup;
 			children = (
+				DD309B9C29EE03E30035831D /* SmartLitter.entitlements */,
+				DD309B9B29EE03AA0035831D /* Info.plist */,
+				DD309B9229EDFF140035831D /* GoogleService-Info.plist */,
 				DD2E885429C69950001A5569 /* View */,
 				DD2E882A29C698D5001A5569 /* SmartLitterApp.swift */,
 				DD2E882C29C698D5001A5569 /* MainView.swift */,
@@ -221,6 +234,11 @@
 			dependencies = (
 			);
 			name = SmartLitter;
+			packageProductDependencies = (
+				DD309B9529EDFFC90035831D /* FirebaseAnalytics */,
+				DD309B9729EDFFC90035831D /* FirebaseAuth */,
+				DD309B9929EDFFC90035831D /* FirebaseMessaging */,
+			);
 			productName = SmartLitter;
 			productReference = DD2E882729C698D5001A5569 /* SmartLitter.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +311,9 @@
 				Base,
 			);
 			mainGroup = DD2E881E29C698D5001A5569;
+			packageReferences = (
+				DD309B9429EDFFC90035831D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DD2E882829C698D5001A5569 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -311,6 +332,7 @@
 			files = (
 				DD2E883229C698D6001A5569 /* Preview Assets.xcassets in Resources */,
 				DD2E882F29C698D6001A5569 /* Assets.xcassets in Resources */,
+				DD309B9329EDFF140035831D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,12 +526,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartLitter/SmartLitter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartLitter/Preview Content\"";
 				DEVELOPMENT_TEAM = 5HKN292LU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartLitter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,7 +544,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fz.SmartLitterSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -533,12 +557,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartLitter/SmartLitter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartLitter/Preview Content\"";
 				DEVELOPMENT_TEAM = 5HKN292LU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartLitter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -549,7 +575,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fz.SmartLitterSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fz.SmartLitterSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -673,6 +699,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD309B9429EDFFC90035831D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD309B9529EDFFC90035831D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD309B9429EDFFC90035831D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DD309B9729EDFFC90035831D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD309B9429EDFFC90035831D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DD309B9929EDFFC90035831D /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD309B9429EDFFC90035831D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD2E881F29C698D5001A5569 /* Project object */;
 }

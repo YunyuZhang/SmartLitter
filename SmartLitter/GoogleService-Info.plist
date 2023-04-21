@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>740130968852-tv2lacqpi0hj4npqbnj2uqdv4v8i0kg4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.740130968852-tv2lacqpi0hj4npqbnj2uqdv4v8i0kg4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD1fpOsSjduK9MyzOH6ASgBR5IuBpRX974</string>
+	<key>GCM_SENDER_ID</key>
+	<string>740130968852</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.fz.SmartLitterSwiftUI</string>
+	<key>PROJECT_ID</key>
+	<string>iotprojectbackendtest</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iotprojectbackendtest.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:740130968852:ios:4e62625d4f802b5be65e01</string>
+	<key>DATABASE_URL</key>
+	<string>https://iotprojectbackendtest-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
