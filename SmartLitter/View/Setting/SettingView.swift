@@ -10,7 +10,7 @@ import UIKit
 
 struct SettingView: View {
     @State private var toggleOn = true
-    
+    @State private var showBanner = false
     
     var body: some View {
 //        NavigationView {
@@ -45,6 +45,42 @@ struct SettingView: View {
                             }
                             Divider()
                             
+                            VStack {
+                                Text("Hardware Settings")
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                                    .frame(maxWidth: .infinity,
+                                           maxHeight: .infinity,
+                                           alignment: .leading)
+                                
+                                HStack {
+                                    Text("Device Status: Online")
+                                    Circle()
+                                        .fill(Color.green)
+                                        .frame(width: 10, height: 10)
+                                }
+                                .frame(maxWidth: .infinity,
+                                       maxHeight: .infinity,
+                                       alignment: .leading)
+                                
+                                Button("Set Device Network") {
+                                    
+                                }
+                                    .frame(maxWidth: .infinity,
+                                           maxHeight: .infinity,
+                                           alignment: .leading)
+                                
+                                Button("Calibrate Weight") {
+                                    showBanner = true
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                        showBanner = false
+                                    }
+                                }.frame(maxWidth: .infinity,
+                                        maxHeight: .infinity,
+                                        alignment: .leading)
+                                
+                            }
+                            Divider()
+                            
                             VStack() {
                                 Text("Notification Settings")
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
@@ -65,12 +101,26 @@ struct SettingView: View {
                                         .frame(maxWidth: .infinity,
                                                maxHeight: .infinity,
                                                alignment: .leading)
-                                               }
+                                }
                             }
                 
                         }
     
                     }
+                    .overlay(
+                                VStack {
+                                    if showBanner {
+                                        Text("Weight reading is calibrate")
+                                            .padding()
+                                            .frame(maxWidth: .infinity)
+                                            .background(Color.green)
+                                            .foregroundColor(.white)
+                                            .transition(.move(edge: .top))
+                                    }
+                                    Spacer()
+                                }
+                                .animation(.easeInOut)
+                            )
                     .font(.system(size: 20, weight: .light, design: .rounded))
                     .frame(maxWidth: .infinity,
                            maxHeight: .infinity,
