@@ -29,6 +29,8 @@
 		DDB0ABDB29F5D4AC003EB2ED /* DeviceNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABDA29F5D4AC003EB2ED /* DeviceNetworkView.swift */; };
 		DDB0ABDD29F5DD16003EB2ED /* WifiWebsiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABDC29F5DD16003EB2ED /* WifiWebsiteView.swift */; };
 		DDB0ABDF29F5E7C4003EB2ED /* WifiInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABDE29F5E7C4003EB2ED /* WifiInputView.swift */; };
+		DDB0ABE129F5F650003EB2ED /* CatProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABE029F5F650003EB2ED /* CatProfileViewModel.swift */; };
+		DDB0ABE429F5FBB3003EB2ED /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABE329F5FBB3003EB2ED /* BannerView.swift */; };
 		DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512929C7E1120001C72F /* HistoryViewModel.swift */; };
 		DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512B29C7E2CC0001C72F /* LogView.swift */; };
 		DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512D29C808440001C72F /* AppDelegate.swift */; };
@@ -78,6 +80,8 @@
 		DDB0ABDA29F5D4AC003EB2ED /* DeviceNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceNetworkView.swift; sourceTree = "<group>"; };
 		DDB0ABDC29F5DD16003EB2ED /* WifiWebsiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiWebsiteView.swift; sourceTree = "<group>"; };
 		DDB0ABDE29F5E7C4003EB2ED /* WifiInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInputView.swift; sourceTree = "<group>"; };
+		DDB0ABE029F5F650003EB2ED /* CatProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatProfileViewModel.swift; sourceTree = "<group>"; };
+		DDB0ABE329F5FBB3003EB2ED /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		DDE0512929C7E1120001C72F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		DDE0512B29C7E2CC0001C72F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		DDE0512D29C808440001C72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 		DD2E885429C69950001A5569 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DDB0ABE229F5FBA2003EB2ED /* Shared */,
 				DDE0513229C8D05E0001C72F /* Setting */,
 				DDE0512F29C8198F0001C72F /* CatProfile */,
 				DD0C5E3B29C7D8EC0048E265 /* History */,
@@ -206,6 +211,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DDB0ABE229F5FBA2003EB2ED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DDB0ABE329F5FBB3003EB2ED /* BannerView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		DDE0512F29C8198F0001C72F /* CatProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +226,7 @@
 				DD2E885729C699B3001A5569 /* CatProfileView.swift */,
 				DD2277C229C7A5F500CAACA0 /* EditProfileView.swift */,
 				DDE0513029C819BF0001C72F /* AllCatsViewModel.swift */,
+				DDB0ABE029F5F650003EB2ED /* CatProfileViewModel.swift */,
 			);
 			path = CatProfile;
 			sourceTree = "<group>";
@@ -369,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB0ABE429F5FBB3003EB2ED /* BannerView.swift in Sources */,
 				DD63886B29F4DFB5001E023F /* CustomAlertsViewModel.swift in Sources */,
 				DDE0513429C8D0870001C72F /* CustomAlertsView.swift in Sources */,
 				DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */,
@@ -380,6 +395,7 @@
 				DDB0ABDF29F5E7C4003EB2ED /* WifiInputView.swift in Sources */,
 				DD0C5E3A29C7D1BE0048E265 /* SignInView.swift in Sources */,
 				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
+				DDB0ABE129F5F650003EB2ED /* CatProfileViewModel.swift in Sources */,
 				DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */,
 				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,
 				DD2E885829C699B3001A5569 /* CatProfileView.swift in Sources */,

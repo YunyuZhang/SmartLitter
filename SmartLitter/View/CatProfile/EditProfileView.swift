@@ -11,8 +11,14 @@ struct EditProfileView: View {
     
     @State private var catName: String = ""
     @State private var age: String = ""
+    @State private var gender: String = ""
     @State private var breed: String = ""
     @State private var weight: String = ""
+    @ObservedObject var catProfileViewModel: CatProfileViewModel
+    
+    @Environment(\.presentationMode) var presentationMode
+    @State private var showBanner = false
+
     
     var body: some View {
         NavigationView {
@@ -34,60 +40,93 @@ struct EditProfileView: View {
                         HStack(spacing: 10) {
                             Text("Name")
                             TextField(
-                                    "Name",
-                                    text: $catName
-                                )
+                                "Name",
+                                text: $catName
+                            )
                             .frame(width: 200, height: 50)
                         }
                         HStack {
                             Text("Age")
                             TextField(
-                                    "Approximate Age",
-                                    text: $catName
-                                )
+                                "Approximate Age",
+                                text: $age
+                            )
                             .frame(width: 200, height: 50)
                         }
                         HStack {
                             Text("Gender")
                             TextField(
-                                    "Male/Female",
-                                    text: $catName
-                                )
+                                "Male/Female",
+                                text: $gender
+                            )
                             .frame(width: 200, height: 50)
                         }
                         HStack {
                             Text("Breed")
                             TextField(
-                                    "Breed",
-                                    text: $breed
-                                )
+                                "Breed",
+                                text: $breed
+                            )
                             .frame(width: 200, height: 50)
                         }
                         HStack {
                             Text("Weight")
                             TextField(
-                                    "Weight(lbs)",
-                                    text: $weight
-                                )
+                                "Weight(lbs)",
+                                text: $weight
+                            )
                             .frame(width: 200, height: 50)
                         }
                     }
-                    Text("Update Profile")
-                        .frame(width: 150, height: 30)
-                        .padding(15)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(15)
-                        .padding(.top, 30)
+                    
+                    Button("Update Profile") {
+                        updateProfile()
+                        
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                            showBanner = true
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                            showBanner = false
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                       
+                    }
+                    .frame(width: 150, height: 30)
+                    .padding(15)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    .padding(.top, 30)
                 }
                 .font(.system(size: 20, weight: .light, design: .rounded))
             }
+            .overlay(BannerView(showBanner: $showBanner, text: "Profile Updated"))
         }
+    }
+    
+    func updateProfile() {
+        if !catName.isEmpty {
+            catProfileViewModel.name = catName
+        }
+        if !age.isEmpty {
+            catProfileViewModel.age = age
+        }
+        if !gender.isEmpty {
+            catProfileViewModel.gender = gender
+        }
+        if !breed.isEmpty {
+            catProfileViewModel.breed = breed
+        }
+        if !weight.isEmpty {
+            catProfileViewModel.weight = weight
+        }
+        catProfileViewModel.lastUpdated = "\(Date())"
     }
 }
 
-struct EditProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditProfileView()
-    }
-}
+//struct EditProfileView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EditProfileView()
+//    }
+//}

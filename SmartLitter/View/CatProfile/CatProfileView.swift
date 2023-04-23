@@ -9,7 +9,9 @@ import SwiftUI
 
 
 struct CatProfileView: View {
-    @ObservedObject private var  allCatsViewModel = AllCatsViewModel()
+    
+    @StateObject var catProfileViewModel = CatProfileViewModel()
+
 
     var body: some View {
 //        NavigationView {
@@ -26,7 +28,8 @@ struct CatProfileView: View {
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                         .frame(width: 100, height: 40)
                         .offset(x:0, y: -10)
-                    NavigationLink(destination: EditProfileView()) {
+                    NavigationLink(
+                        destination: EditProfileView(catProfileViewModel: catProfileViewModel)) {
                                        Text("Edit Profile")
                                            .frame(width: 150, height: 30)
                                            .font(.system(size: 15, weight: .light, design: .rounded))
@@ -37,12 +40,12 @@ struct CatProfileView: View {
                                    }
                     
                     VStack(alignment: .leading, spacing: 20) {
-                        Text("Age: 2 years old")
-                        Text("Gender: Male")
-                        Text("Breed: Brisith Short Hair")
-                        Text("Weight: 18 Lbs")
-                        Text("Last Updated: 3/19/2022")
-                    }
+                               Text("Age: \(catProfileViewModel.age)")
+                               Text("Gender: \(catProfileViewModel.gender)")
+                               Text("Breed: \(catProfileViewModel.breed)")
+                               Text("Weight: \(catProfileViewModel.weight)")
+                               Text("Last Updated: \(catProfileViewModel.lastUpdated)")
+                           }
                     .padding(.top, 10)
                     
                     NavigationLink(destination: WeightInfoView()) {
