@@ -25,6 +25,7 @@
 		DD309B9629EDFFC90035831D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DD309B9529EDFFC90035831D /* FirebaseAnalytics */; };
 		DD309B9829EDFFC90035831D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DD309B9729EDFFC90035831D /* FirebaseAuth */; };
 		DD309B9A29EDFFC90035831D /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DD309B9929EDFFC90035831D /* FirebaseMessaging */; };
+		DD63886B29F4DFB5001E023F /* CustomAlertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD63886A29F4DFB5001E023F /* CustomAlertsViewModel.swift */; };
 		DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512929C7E1120001C72F /* HistoryViewModel.swift */; };
 		DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512B29C7E2CC0001C72F /* LogView.swift */; };
 		DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512D29C808440001C72F /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 		DD309B9229EDFF140035831D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD309B9B29EE03AA0035831D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DD309B9C29EE03E30035831D /* SmartLitter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartLitter.entitlements; sourceTree = "<group>"; };
+		DD63886A29F4DFB5001E023F /* CustomAlertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertsViewModel.swift; sourceTree = "<group>"; };
 		DDE0512929C7E1120001C72F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		DDE0512B29C7E2CC0001C72F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		DDE0512D29C808440001C72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 			children = (
 				DD2E885B29C6AC1A001A5569 /* SettingView.swift */,
 				DDE0513329C8D0870001C72F /* CustomAlertsView.swift */,
+				DD63886A29F4DFB5001E023F /* CustomAlertsViewModel.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD63886B29F4DFB5001E023F /* CustomAlertsViewModel.swift in Sources */,
 				DDE0513429C8D0870001C72F /* CustomAlertsView.swift in Sources */,
 				DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */,
 				DD2277C329C7A5F500CAACA0 /* EditProfileView.swift in Sources */,

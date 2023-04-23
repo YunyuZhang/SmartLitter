@@ -8,23 +8,44 @@
 import SwiftUI
 import UIKit
 
+
 struct CustomAlertsView: View {
+    
     @State private var numberOfTime: String = ""
     @State private var hour: String = ""
     @State private var toggleOn = true
     
+    @ObservedObject var customAlertsviewModel = CustomAlertsViewModel()
+    
     
     var body: some View {
+        
+    
         ZStack {
+            
             ScrollView(showsIndicators: false) {
+                
+                
                 VStack {
                     Text("Custom Alerts")
-                        .font(.system(size: 20, weight: .bold, design: .rounded))
-                        .frame(maxWidth: .infinity,
-                               maxHeight: .infinity,
-                               alignment: .leading)
-                    Toggle("Alert: when poop 3 times within 6 hours", isOn: $toggleOn)
-                        .padding(.bottom)
+                                            .font(.system(size: 20, weight: .bold, design: .rounded))
+                                            .frame(maxWidth: .infinity,
+                                                   maxHeight: .infinity,
+                                                   alignment: .leading)
+                                        
+                    
+                    ForEach(customAlertsviewModel.allCustomAlerts.indices, id: \.self) { index in
+                        HStack {
+                            Text(customAlertsviewModel.allCustomAlerts[index].getAlertContent())
+                            Toggle("", isOn: self.$customAlertsviewModel.allCustomAlerts[index].toggleOn)
+                        }
+                        Divider()
+                            .frame(height: 0.3)
+                            .background(Color.gray)
+                        
+                    }
+
+                
                     Spacer()
                     Group {
                         Text("Notify me when my cat:")
