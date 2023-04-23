@@ -11,9 +11,12 @@ import UIKit
 
 struct CustomAlertsView: View {
     
+    
+    
+    @State private var eventType: String = "Poop"
+    @State private var comparator: String = "More than"
     @State private var numberOfTime: String = ""
     @State private var hour: String = ""
-    @State private var toggleOn = true
     
     @ObservedObject var customAlertsviewModel = CustomAlertsViewModel()
     
@@ -53,9 +56,9 @@ struct CustomAlertsView: View {
                                    maxHeight: .infinity,
                                    alignment: .leading)
 
-                        SegmentedControlView(options: ["Poop", "Pee"], selected: "Poop")
+                        SegmentedControlView(options: ["Poop", "Pee"], selected: eventType)
                         Text("For")
-                        SegmentedControlView(options: ["More than", "Less or equals to"], selected: "More than")
+                        SegmentedControlView(options: ["More than", "Less or equals to"], selected: comparator)
                         HStack {
                             TextField(
                                 "# of Times",
@@ -83,6 +86,18 @@ struct CustomAlertsView: View {
                         
                         Button("Save Setting") {
                             hideKeyboard()
+                            customAlertsviewModel.createCustomAlert(
+                                eventType: eventType.lowercased(),
+                                comparator: comparator.lowercased(),
+                                numberOfTimes: Int(numberOfTime) ?? 0,
+                                timePeriod: Int(hour) ?? 0,
+                                toggleOn: true
+                            )
+
+                            eventType = "Poop"
+                            comparator = "More than"
+                            numberOfTime = ""
+                            hour = ""
                         }
                         .frame(width: 150, height: 30)
                         .font(.system(size: 15, weight: .light, design: .rounded))

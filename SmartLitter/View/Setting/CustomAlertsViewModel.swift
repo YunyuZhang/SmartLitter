@@ -12,6 +12,8 @@ import SwiftUI
 class CustomAlertsViewModel: ObservableObject {
     @Published var allCustomAlerts: [CustomAlert] = []
     
+    var alertID = 3
+    
     init() {
         // Initialize the custom alerts array with some sample data
         allCustomAlerts = [
@@ -19,6 +21,20 @@ class CustomAlertsViewModel: ObservableObject {
             CustomAlert(name: "Alert 2", eventType: "pee", comparator: "within" ,numberOfTimes: 8, timePeriod: 8, toggleOn: true)
         ]
     }
+    
+    func createCustomAlert(eventType: String, comparator: String, numberOfTimes: Int, timePeriod: Int, toggleOn: Bool) {
+        let newAlert = CustomAlert(
+            name: "Alert \(self.alertID)",
+            eventType: eventType,
+            comparator: comparator,
+            numberOfTimes: numberOfTimes,
+            timePeriod: timePeriod,
+            toggleOn: toggleOn
+        )
+        self.alertID += 1
+        allCustomAlerts.append(newAlert)
+    }
+
 }
 
 struct CustomAlert: Identifiable {
@@ -40,7 +56,7 @@ struct CustomAlert: Identifiable {
     }
     
     func getAlertContent() -> String {
-        return "\(self.name): when \(self.eventType) \(self.numberOfTimes) times \(self.comparator) \(self.timePeriod) hours"
+        return "\(self.name): when \(self.eventType) \(self.comparator) \(self.numberOfTimes) times within \(self.timePeriod) hours"
     }
     
 }
