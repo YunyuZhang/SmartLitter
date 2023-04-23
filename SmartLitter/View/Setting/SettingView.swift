@@ -11,6 +11,8 @@ import UIKit
 struct SettingView: View {
     @State private var toggleOn = true
     @State private var showBanner = false
+    @State private var showDeviceNetworkView = false
+
     
     var body: some View {
 //        NavigationView {
@@ -62,12 +64,18 @@ struct SettingView: View {
                                        maxHeight: .infinity,
                                        alignment: .leading)
                                 
-                                Button("Set Device Network") {
-                                    
+                                
+                                NavigationLink(destination: DeviceNetworkView()) {
+                                    HStack {
+                                        Text("Set Device Network")
+                                        Spacer()
+                                        Image(systemName: "chevron.forward")
+                                    }
+                                        .font(.system(size: 20, weight: .light, design: .rounded))
+                                        .frame(maxWidth: .infinity,
+                                               maxHeight: .infinity,
+                                               alignment: .leading)
                                 }
-                                    .frame(maxWidth: .infinity,
-                                           maxHeight: .infinity,
-                                           alignment: .leading)
                                 
                                 Button("Calibrate Weight") {
                                     showBanner = true
