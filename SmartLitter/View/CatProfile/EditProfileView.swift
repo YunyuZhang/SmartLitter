@@ -26,8 +26,9 @@ struct EditProfileView: View {
         NavigationView {
             ScrollView(showsIndicators: false) {
                 VStack {
-                    Text("Edit Cat Profile")
-                        .padding(30)
+                    PageHeaderView(title: "Edit Cat Profile")
+                        .padding(20)
+                    
                     Image("haybe_profile")
                         .resizable()
                         .clipShape(Circle())
@@ -72,7 +73,7 @@ struct EditProfileView: View {
 //                                    .tag(index)
 //                                }
 //                            }
-                            .pickerStyle(MenuPickerStyle())
+//                            .pickerStyle(MenuPickerStyle())
                             .frame(width: 200, height: 50)
                         }
                         

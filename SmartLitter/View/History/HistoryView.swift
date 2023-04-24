@@ -18,13 +18,13 @@ struct HistoryView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    Text("Usage History")
+                    PageHeaderView(title: "Usage History")
                         .padding(20)
                     
                     Button(action: {
                         self.showFilters.toggle()
                     }) {
-                        Text("Show/Hide Filters")
+                        Text("Date Filter")
                     }
                     
                     if showFilters {

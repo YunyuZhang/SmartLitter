@@ -17,7 +17,7 @@ struct CatProfileView: View {
 //        NavigationView {
             ScrollView(showsIndicators: false) {
                 VStack {
-                    Text("Cat Profile")
+                    PageHeaderView(title: "Cat Profile")
                         .padding(20)
                     Image("haybe_profile")
                         .resizable()
