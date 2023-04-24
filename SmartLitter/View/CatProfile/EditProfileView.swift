@@ -14,6 +14,8 @@ struct EditProfileView: View {
     @State private var gender: String = ""
     @State private var breed: String = ""
     @State private var weight: String = ""
+    @State private var genderIndex = 0
+    let genderOptions = [("Male", "♂"), ("Female", "♀")]
     @ObservedObject var catProfileViewModel: CatProfileViewModel
     
     @Environment(\.presentationMode) var presentationMode
@@ -59,8 +61,23 @@ struct EditProfileView: View {
                                 "Male/Female",
                                 text: $gender
                             )
+                            
+//                            Picker("Gender", selection: $genderIndex) {
+//                                ForEach(0..<genderOptions.count) { index in
+//                                    HStack {
+//    //                                    Text(self.genderOptions[index].0)
+//                                        Spacer()
+//                                        Text(self.genderOptions[index].1)
+//                                    }
+//                                    .tag(index)
+//                                }
+//                            }
+                            .pickerStyle(MenuPickerStyle())
                             .frame(width: 200, height: 50)
                         }
+                        
+                        
+
                         HStack {
                             Text("Breed")
                             TextField(
@@ -81,7 +98,6 @@ struct EditProfileView: View {
                     
                     Button("Update Profile") {
                         updateProfile()
-                        
                         
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
                             showBanner = true
