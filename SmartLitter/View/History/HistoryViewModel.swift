@@ -26,7 +26,7 @@ final class HistoryViewModel : ObservableObject {
     
     func getUsageWithAPI() {
         self.logList = []
-        guard let url = URL(string: "http://localhost:8080/getUsage?userID=yunyuzhang11") else {
+        guard let url = URL(string: "https://iotprojectbackend-ltq2si4ddq-ue.a.run.app/getUsage?userID=yunyuzhang11") else {
             print("Invalid URL")
             return
         }
@@ -84,13 +84,21 @@ final class HistoryViewModel : ObservableObject {
         }
     }
     
+    func getSortedLogList() -> [UsageLog] {
+        return self.logList.sorted()
+    }
+    
     
 }
 
-struct UsageLog: Identifiable {
+struct UsageLog: Identifiable, Comparable {
     let id = UUID()
     var timestamp = ""
     var catName = ""
     var eventType = ""
+    
+    static func < (lhs: UsageLog, rhs: UsageLog) -> Bool {
+        return lhs.timestamp > rhs.timestamp
+    }
 }
 

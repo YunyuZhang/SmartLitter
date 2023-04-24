@@ -71,7 +71,7 @@ struct HistoryView: View {
                     
 
                     List {
-                        ForEach(historyViewModel.logList, id: \.id) {
+                        ForEach(historyViewModel.getSortedLogList(), id: \.id) {
                             log in
                             LogView(log:log)
                         }

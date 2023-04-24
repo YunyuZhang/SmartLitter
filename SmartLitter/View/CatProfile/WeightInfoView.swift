@@ -32,7 +32,7 @@ struct WeightInfoView: View {
 
     
     @State private var selectedOption = "1m"
-    let options = ["1w", "1m", "6m", "1ydada"]
+    let options = ["1w", "1m", "6m", "1y"]
     
     @State var filteredWeightHistory: [Weight] = []
         
@@ -49,15 +49,15 @@ struct WeightInfoView: View {
                         .frame(width: 200, height:200)
                     
                     
-                    Picker("Options", selection: $selectedOption) {
-                                    ForEach(0..<options.count) { index in
-                                        Text(options[index])
-                                    }
-                                }
-                                .pickerStyle(SegmentedPickerStyle())
+//                    Picker("Options", selection: $selectedOption) {
+//                                    ForEach(0..<options.count) { index in
+//                                        Text(options[index])
+//                                    }
+//                                }
+//                                .pickerStyle(SegmentedPickerStyle())
                                
                     
-//                    SegmentedControlView(options: ["1w", "1m", "6m", "1y"], selected: selectedOption)
+                    SegmentedControlView(options: ["1w", "1m", "6m", "1y"], selected: selectedOption)
                 
                     
                     
