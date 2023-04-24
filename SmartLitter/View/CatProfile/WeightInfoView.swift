@@ -40,7 +40,7 @@ struct WeightInfoView: View {
         NavigationView {
             ScrollView(showsIndicators: false) {
                 VStack {
-                    Text("Weight History")
+                    PageHeaderView(title: "Weight History")
                         .padding(20)
                     Image("haybe_profile")
                         .resizable()
