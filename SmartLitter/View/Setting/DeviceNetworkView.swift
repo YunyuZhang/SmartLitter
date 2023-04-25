@@ -28,7 +28,7 @@ struct DeviceNetworkView: View {
             .frame(width: 150, height: 30)
             .font(.system(size: 15, weight: .light, design: .rounded))
             .padding(10)
-            .background(Color.blue)
+            .background(Color(red: 238/255, green: 68/255, blue: 67/255))
             .foregroundColor(.white)
             .cornerRadius(20)
             .padding()

@@ -111,7 +111,7 @@ struct EditProfileView: View {
                     }
                     .frame(width: 150, height: 30)
                     .padding(15)
-                    .background(Color.blue)
+                    .background(Color(red: 238/255, green: 68/255, blue: 67/255))
                     .foregroundColor(.white)
                     .cornerRadius(15)
                     .padding(.top, 30)

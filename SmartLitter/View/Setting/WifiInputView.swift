@@ -37,7 +37,7 @@ struct WifiInputView: View {
             }) {
                 Text("Connect")
                     .frame(maxWidth: .infinity, minHeight: 44)
-                    .background(Color.blue)
+                    .background(Color(red: 238/255, green: 68/255, blue: 67/255))
                     .foregroundColor(.white)
                     .cornerRadius(8)
             }
