@@ -20,11 +20,38 @@ struct HistoryView: View {
                 VStack {
                     PageHeaderView(title: "Usage History")
                         .padding(20)
+                    Divider()
+                    VStack(alignment: .center) {
+                        Text("Summary")
+                            .bold()
+                        Text("Haybe")
+                        HStack {
+                            VStack {
+                                Text("pooped")
+                                Text("3")
+                                    .foregroundColor(.orange)
+                                    .font(.system(size: 25, weight: .bold, design: .rounded))
+                                Text("times")
+                            }
+                            Divider()
+                            VStack {
+                                Text("peed")
+                                Text("2")
+                                    .foregroundColor(.orange)
+                                    .font(.system(size: 25, weight: .bold, design: .rounded))
+                                Text("times")
+                            }
+                            
+                        }
+                        Text("within 24 hours")
+                    }
                     
                     Button(action: {
                         self.showFilters.toggle()
                     }) {
                         Text("Date Filter")
+                            .font(.system(size: 20, weight: .regular, design: .rounded))
+                            .padding()
                     }
                     
                     if showFilters {
@@ -34,51 +61,37 @@ struct HistoryView: View {
                             
 //                            Button("Usage") {
 //                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Haybe just pooped", time: 3.0)
-//                                
+//
 //                            }
 //                            .frame(width:70, height: 20)
-//                            
+//
 //                            Button("Alert") {
 //                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Haybe just pooped 3 times within 6 hours!", time: 3.5)
 //                            }
 //                            .frame(width:70, height: 20)
-//                            
+//
 //                            Button("Summary") {
 //                                generateNotification(title: "PurrfectTracker", subtitle: "Weekly Summary", body: "Haybe pooped 7 times, peed 10 times and gained 2 lbs last week", time: 3.0)
 //                            }
 //                            .frame(width:70, height: 20)
                         }.padding(4)
                     }
-                    Divider()
-                    VStack(alignment: .leading) {
-                        Text("Summary")
-                            .bold()
-                        Text("Haybe")
-                        HStack {
-                            Text("pooped")
-                            Text("3")
-                                .foregroundColor(.orange)
-                            Text("times")
-                        }
-                        HStack {
-                            Text("peed")
-                            Text("2")
-                                .foregroundColor(.orange)
-                            Text("times")
-                        }
-                        Text("within 24 hours")
-                    }
                     
 
-                    List {
+//                    List {
+//                        ForEach(historyViewModel.getSortedLogList(), id: \.id) {
+//                            log in
+//                            LogView(log:log)
+//                        }
+//                    }
+                    Group {
                         ForEach(historyViewModel.getSortedLogList(), id: \.id) {
                             log in
+                            Divider()
                             LogView(log:log)
+                            Divider()
                         }
                     }
-                    .frame(width: 300,
-                           height: 500,
-                           alignment: .leading)
                 }
             }
             .padding()
