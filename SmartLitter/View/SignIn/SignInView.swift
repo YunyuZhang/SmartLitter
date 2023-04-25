@@ -13,6 +13,7 @@ import GoogleSignInSwift
 
 struct SignInView: View {
     @ObservedObject private var signInViewModel = SignInViewModel()
+    @State private var navigateToMainView = false
     
     var body: some View {
         NavigationView {
@@ -26,17 +27,20 @@ struct SignInView: View {
                     signInViewModel.signInBtnPressed()
                 }
                 
+                NavigationLink(destination: MainView(), isActive: $navigateToMainView) {
+                    SignInButton(imageName: "Facebook_SignIn") {
+                        navigateToMainView = true
+                    }
+                }
+                
+                NavigationLink(destination: MainView(), isActive: $navigateToMainView) {
+                    SignInButton(imageName: "Apple_SignIn") {
+                        navigateToMainView = true
+                    }
+                }
+                
                 NavigationLink("", destination: MainView(), isActive: $signInViewModel.isSignedIn)
                                     .hidden()
-                
-                NavigationLink(destination: MainView()) {
-                    SignInButton(imageName: "Facebook_SignIn") {}
-                }
-                
-                NavigationLink(destination: MainView()) {
-                    SignInButton(imageName: "Apple_SignIn") {}
-                }
-                
             }
         }
     }
