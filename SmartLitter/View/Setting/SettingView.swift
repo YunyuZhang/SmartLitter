@@ -98,7 +98,8 @@ struct SettingView: View {
                                        maxHeight: .infinity,
                                        alignment: .leading)
                             Toggle("All Notifications", isOn: $toggleOn)
-                            Toggle("Notify Box Usage", isOn: $toggleOn)
+                            Toggle("Box Usage", isOn: $toggleOn)
+                            Toggle("Weekly Report", isOn: $toggleOn)
                             
                             
                             NavigationLink(destination: CustomAlertsView()) {
