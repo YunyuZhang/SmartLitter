@@ -20,6 +20,7 @@ struct MainView: View {
                             Image("Cat_icon")
                                 .frame(width: 2, height: 2)
                             Text("Cat Profile")
+                                .font(.system(size: 5, weight: .regular, design: .rounded))
                         }
                     }
                     .tag(0)
@@ -28,6 +29,7 @@ struct MainView: View {
                         VStack {
                             Image(systemName: "chart.bar.doc.horizontal")
                             Text("History")
+                                .font(.system(size: 5, weight: .regular, design: .rounded))
                         }
                     }
                     .tag(1)
@@ -37,6 +39,7 @@ struct MainView: View {
                         VStack {
                             Image(systemName: "gearshape")
                             Text("Setting")
+                                .font(.system(size: 5, weight: .regular, design: .rounded))
                         }
                     }
                     .tag(2)

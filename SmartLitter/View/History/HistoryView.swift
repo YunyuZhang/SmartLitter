@@ -15,7 +15,6 @@ struct HistoryView: View {
     @ObservedObject private var historyViewModel = HistoryViewModel()    
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 VStack {
                     PageHeaderView(title: "Usage History")
@@ -27,7 +26,13 @@ struct HistoryView: View {
                         Text("Haybe")
                         HStack {
                             VStack {
-                                Text("pooped")
+                                Image("pets_poop")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(Circle())
+                                
+                                    
                                 Text("3")
                                     .foregroundColor(.orange)
                                     .font(.system(size: 25, weight: .bold, design: .rounded))
@@ -35,7 +40,13 @@ struct HistoryView: View {
                             }
                             Divider()
                             VStack {
-                                Text("peed")
+                                
+                                Image("water_drop")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .aspectRatio(contentMode: .fit)
+                                    .clipShape(Circle())
+                                
                                 Text("2")
                                     .foregroundColor(.orange)
                                     .font(.system(size: 25, weight: .bold, design: .rounded))
@@ -58,32 +69,9 @@ struct HistoryView: View {
                         VStack {
                             MultiDatePicker("Dates Filter", selection: $dates)
                                 
-                            
-//                            Button("Usage") {
-//                                generateNotification(title: "PurrfectTracker", subtitle: "Box Usage", body: "Haybe just pooped", time: 3.0)
-//
-//                            }
-//                            .frame(width:70, height: 20)
-//
-//                            Button("Alert") {
-//                                generateNotification(title: "PurrfectTracker", subtitle: "ALERT", body: "Haybe just pooped 3 times within 6 hours!", time: 3.5)
-//                            }
-//                            .frame(width:70, height: 20)
-//
-//                            Button("Summary") {
-//                                generateNotification(title: "PurrfectTracker", subtitle: "Weekly Summary", body: "Haybe pooped 7 times, peed 10 times and gained 2 lbs last week", time: 3.0)
-//                            }
-//                            .frame(width:70, height: 20)
                         }.padding(4)
                     }
                     
-
-//                    List {
-//                        ForEach(historyViewModel.getSortedLogList(), id: \.id) {
-//                            log in
-//                            LogView(log:log)
-//                        }
-//                    }
                     Group {
                         ForEach(historyViewModel.getSortedLogList(), id: \.id) {
                             log in
@@ -94,12 +82,10 @@ struct HistoryView: View {
                     }
                 }
             }
-            .padding()
-        }
-        .onAppear() {
+            .onAppear() {
 //            historyViewModel.generateLogs()
-            historyViewModel.getUsageWithAPI()
-        }
+                historyViewModel.getUsageWithAPI()
+            }
     }
     
     func generateNotification(title: String, subtitle: String, body: String, time: Double) {
