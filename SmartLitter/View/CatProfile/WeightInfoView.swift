@@ -45,6 +45,9 @@ struct WeightInfoView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height:200)
                     
+                    Text("18 lbs")
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                    
                     
                     Picker("", selection: $selectedTimeIndex) {
                                     ForEach(0..<options.count) { index in
@@ -60,8 +63,8 @@ struct WeightInfoView: View {
                         RectangleMark(
                             xStart: nil,
                             xEnd: nil,
-                            yStart: .value("Max Weight", 9),
-                            yEnd: .value("Min Weight", 17)
+                            yStart: .value("Min Weight", 9),
+                            yEnd: .value("Max Weight", 17)
                         )
                         .foregroundStyle(.green)
                         .opacity(0.5)
@@ -82,10 +85,12 @@ struct WeightInfoView: View {
                     Spacer()
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        Text("Haybe's current weight is 18 Lbs")
-                        Text("He is a little chunky")
+                        Text("The healthy weight range for Haybe is 9 - 17 lbs")
+                        Text("Haybe is a little chunky")
                     }
-                    .font(.system(size: 20, weight: .light, design: .rounded))
+                    .padding()
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    
                 }
             }
         }
