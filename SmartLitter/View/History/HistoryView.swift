@@ -29,8 +29,7 @@ struct HistoryView: View {
                                 Image("pets_poop")
                                     .resizable()
                                     .frame(width: 50, height: 50)
-                                    .aspectRatio(contentMode: .fit)
-                                    .clipShape(Circle())
+                                    .aspectRatio(contentMode: .fill)
                                 
                                     
                                 Text("3")
@@ -44,8 +43,7 @@ struct HistoryView: View {
                                 Image("water_drop")
                                     .resizable()
                                     .frame(width: 50, height: 50)
-                                    .aspectRatio(contentMode: .fit)
-                                    .clipShape(Circle())
+                                    .aspectRatio(contentMode: .fill)
                                 
                                 Text("2")
                                     .foregroundColor(.orange)
