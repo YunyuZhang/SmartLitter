@@ -36,6 +36,7 @@
 		DDB0ABED29F74C7C003EB2ED /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DDB0ABEC29F74C7C003EB2ED /* GoogleSignInSwift */; };
 		DDB0ABF029F76547003EB2ED /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABEF29F76547003EB2ED /* Globals.swift */; };
 		DDB0ABF329F765EF003EB2ED /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABF229F765EF003EB2ED /* SignInViewModel.swift */; };
+		DDB0ABF529F9E240003EB2ED /* WifiInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0ABF429F9E240003EB2ED /* WifiInputViewModel.swift */; };
 		DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512929C7E1120001C72F /* HistoryViewModel.swift */; };
 		DDE0512C29C7E2CC0001C72F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512B29C7E2CC0001C72F /* LogView.swift */; };
 		DDE0512E29C808440001C72F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0512D29C808440001C72F /* AppDelegate.swift */; };
@@ -90,6 +91,7 @@
 		DDB0ABE529F601FC003EB2ED /* PageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageHeaderView.swift; sourceTree = "<group>"; };
 		DDB0ABEF29F76547003EB2ED /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		DDB0ABF229F765EF003EB2ED /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		DDB0ABF429F9E240003EB2ED /* WifiInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInputViewModel.swift; sourceTree = "<group>"; };
 		DDE0512929C7E1120001C72F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		DDE0512B29C7E2CC0001C72F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		DDE0512D29C808440001C72F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				DDB0ABDA29F5D4AC003EB2ED /* DeviceNetworkView.swift */,
 				DDB0ABDC29F5DD16003EB2ED /* WifiWebsiteView.swift */,
 				DDB0ABDE29F5E7C4003EB2ED /* WifiInputView.swift */,
+				DDB0ABF429F9E240003EB2ED /* WifiInputViewModel.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				DDB0ABDF29F5E7C4003EB2ED /* WifiInputView.swift in Sources */,
 				DD0C5E3A29C7D1BE0048E265 /* SignInView.swift in Sources */,
 				DD2E885C29C6AC1A001A5569 /* SettingView.swift in Sources */,
+				DDB0ABF529F9E240003EB2ED /* WifiInputViewModel.swift in Sources */,
 				DDB0ABE129F5F650003EB2ED /* CatProfileViewModel.swift in Sources */,
 				DDE0512A29C7E1120001C72F /* HistoryViewModel.swift in Sources */,
 				DD2E885A29C6ABD7001A5569 /* HistoryView.swift in Sources */,

@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct WifiInputView: View {
-    @State private var wifiName = ""
-    @State private var wifiPassword = ""
+    @State private var wifiName = "A Device"
+    @State private var wifiPassword = "kunkun0716"
+    @StateObject private var viewModel = WifiInputViewModel()
     
     @State private var showLoading = false
     @State private var showBanner = false
@@ -39,6 +40,9 @@ struct WifiInputView: View {
                 Button(action: {
                     showLoading = true // Set isLoading to true
                     print("Wi-Fi Name: \(wifiName), Wi-Fi Password: \(wifiPassword)")
+                    
+                    viewModel.sendSSIDandPassword(ssid: wifiName, password: wifiPassword)
+                    
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2) { // Wait for 2 seconds
                         showLoading = false // Set isLoading back to false
                         showBanner = true
