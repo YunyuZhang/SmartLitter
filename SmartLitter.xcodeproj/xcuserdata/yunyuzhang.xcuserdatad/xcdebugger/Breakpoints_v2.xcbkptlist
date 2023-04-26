@@ -14,9 +14,9 @@
             filePath = "SmartLitter/View/CatProfile/WeightInfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "getFilteredWeightHistory(info:)"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "getFilteredWeightHistory(timeRange:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -49,6 +49,51 @@
                   endingLineNumber = "100"
                   offsetFromSymbolStart = "156">
                </Location>
+               <Location
+                  uuid = "AB015E0B-E5C3-4AD6-99F3-6B4F089EC52A - d1acfca056976462"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartLitter.WeightInfoView.getFilteredWeightHistory(timeRange: Swift.String) -&gt; Swift.Array&lt;SmartLitter.Weight&gt;"
+                  moduleName = "SmartLitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunyuzhang/Desktop/MISMStudy/MISM_S23/IoT/Project/SmartLitter/SmartLitter/View/CatProfile/WeightInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "212">
+               </Location>
+               <Location
+                  uuid = "AB015E0B-E5C3-4AD6-99F3-6B4F089EC52A - 806376ee0f62caf8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SmartLitter.Weight) -&gt; Swift.Bool in SmartLitter.WeightInfoView.getFilteredWeightHistory(timeRange: Swift.String) -&gt; Swift.Array&lt;SmartLitter.Weight&gt;"
+                  moduleName = "SmartLitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunyuzhang/Desktop/MISMStudy/MISM_S23/IoT/Project/SmartLitter/SmartLitter/View/CatProfile/WeightInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "AB015E0B-E5C3-4AD6-99F3-6B4F089EC52A - 806376ee0f62caf8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SmartLitter.Weight) -&gt; Swift.Bool in SmartLitter.WeightInfoView.getFilteredWeightHistory(timeRange: Swift.String) -&gt; Swift.Array&lt;SmartLitter.Weight&gt;"
+                  moduleName = "SmartLitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunyuzhang/Desktop/MISMStudy/MISM_S23/IoT/Project/SmartLitter/SmartLitter/View/CatProfile/WeightInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "228">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -62,9 +107,9 @@
             filePath = "SmartLitter/View/CatProfile/WeightInfoView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "getFilteredWeightHistory(info:)"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "getFilteredWeightHistory(timeRange:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -97,7 +142,68 @@
                   endingLineNumber = "102"
                   offsetFromSymbolStart = "156">
                </Location>
+               <Location
+                  uuid = "0CE73176-8964-410B-BBAF-147C0EE3225B - d1acfca056976420"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmartLitter.WeightInfoView.getFilteredWeightHistory(timeRange: Swift.String) -&gt; Swift.Array&lt;SmartLitter.Weight&gt;"
+                  moduleName = "SmartLitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunyuzhang/Desktop/MISMStudy/MISM_S23/IoT/Project/SmartLitter/SmartLitter/View/CatProfile/WeightInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "0CE73176-8964-410B-BBAF-147C0EE3225B - 71719aab3f03eb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SmartLitter.Weight) -&gt; Swift.Bool in SmartLitter.WeightInfoView.getFilteredWeightHistory(timeRange: Swift.String) -&gt; Swift.Array&lt;SmartLitter.Weight&gt;"
+                  moduleName = "SmartLitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunyuzhang/Desktop/MISMStudy/MISM_S23/IoT/Project/SmartLitter/SmartLitter/View/CatProfile/WeightInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "0CE73176-8964-410B-BBAF-147C0EE3225B - 71719aab3f03eb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SmartLitter.Weight) -&gt; Swift.Bool in SmartLitter.WeightInfoView.getFilteredWeightHistory(timeRange: Swift.String) -&gt; Swift.Array&lt;SmartLitter.Weight&gt;"
+                  moduleName = "SmartLitter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yunyuzhang/Desktop/MISMStudy/MISM_S23/IoT/Project/SmartLitter/SmartLitter/View/CatProfile/WeightInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "228">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C5B1BA4-905E-4A66-A3B7-017A770C903A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmartLitter/View/History/HistoryViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "poopCount"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

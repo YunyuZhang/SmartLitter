@@ -32,7 +32,7 @@ struct HistoryView: View {
                                     .aspectRatio(contentMode: .fill)
                                 
                                     
-                                Text("3")
+                                Text("\(historyViewModel.poopCount)")
                                     .foregroundColor(.orange)
                                     .font(.system(size: 25, weight: .bold, design: .rounded))
                                 Text("times")
@@ -45,7 +45,7 @@ struct HistoryView: View {
                                     .frame(width: 50, height: 50)
                                     .aspectRatio(contentMode: .fill)
                                 
-                                Text("2")
+                                Text("\(historyViewModel.peeCount)")
                                     .foregroundColor(.orange)
                                     .font(.system(size: 25, weight: .bold, design: .rounded))
                                 Text("times")

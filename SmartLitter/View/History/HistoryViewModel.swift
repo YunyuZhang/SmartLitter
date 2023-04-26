@@ -88,6 +88,29 @@ final class HistoryViewModel : ObservableObject {
         return self.logList.sorted()
     }
     
+    private func eventCount(for eventType: String) -> Int {
+        let now = Date()
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: now)!
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd','HH:mm:ss"
+        return self.logList.filter {
+            if let logDate = formatter.date(from: $0.timestamp) {
+                return $0.eventType == eventType && logDate >= yesterday && logDate <= now
+            } else {
+                return false
+            }
+        }.count
+    }
+    
+    // Computes the number of poop events within the last 24 hours from logList
+    var poopCount: Int {
+        return eventCount(for: "poop")
+    }
+    
+    // Computes the number of pee events within the last 24 hours from logList
+    var peeCount: Int {
+        return eventCount(for: "pee")
+    }
     
 }
 
