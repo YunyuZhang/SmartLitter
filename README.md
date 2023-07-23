@@ -1,7 +1,7 @@
 #  Smart Cat Litter Extension iOS App
 
 # Project Introduction
-[17781_Final_Post.pdf](https://github.com/YunyuZhang/SmartLitter/files/12139838/17781_Final_Post.pdf)
+https://github.com/YunyuZhang/SmartLitter/blob/main/17781_Final_Post.pdf
 
 # How to run it
 This is a project for the Mobile and IoT Computing Services class.
